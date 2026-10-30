@@ -114,3 +114,4 @@ The ordinary `docker compose up --build -d` stack was also launched and the bot 
 
 Portals credentials are configured, but its edge currently blocks this server client with Cloudflare error 1010. Ask Portals support (official docs link to [@Portals_Help_Bot](https://t.me/Portals_Help_Bot) for partner API questions) for the approved server-side API access path or allowlisting. Do not spoof a browser fingerprint. Once Portals confirms access, restart the bot; the adapter uses the official GET API and free-tier 1 request/second limit with up to five pages per scan. MRKT and Tonnel still require published or operator-authorized APIs. Live fee schedules and sales history must be verified before showing net profit or liquidity-based valuations. Until then, arbitrage output is a gross ask-price spread, never a profit guarantee.
 # portal
+# portal
