@@ -1,0 +1,34 @@
+[build-system]
+requires = ["setuptools>=70", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "telegram-gift-monitor"
+version = "0.1.0"
+description = "Read-only Telegram collectible gift marketplace monitoring bot"
+requires-python = ">=3.12"
+dependencies = [
+  "aiogram>=3.13,<4",
+  "APScheduler>=3.10,<4",
+  "asyncpg>=0.29,<1",
+  "pydantic-settings>=2.5,<3",
+  "redis>=5,<7",
+  "SQLAlchemy[asyncio]>=2.0,<3",
+]
+
+[project.optional-dependencies]
+dev = ["pytest>=8,<9", "pytest-asyncio>=0.24,<2", "ruff>=0.7,<1"]
+
+[tool.setuptools.packages.find]
+include = ["app*"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+asyncio_mode = "auto"
+
+[tool.ruff]
+line-length = 100
+target-version = "py312"
+
+[tool.ruff.lint]
+select = ["E", "F", "I", "UP"]
